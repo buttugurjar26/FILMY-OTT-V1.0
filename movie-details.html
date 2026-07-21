@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FILMY OTT | Movie Details</title>
+
+<link rel="stylesheet" href="movie-details.css">
+
+</head>
+
+
+<body>
+
+
+<div class="details-box">
+
+
+
+    <img 
+    id="moviePoster" 
+    class="details-poster"
+    src=""
+    >
+
+
+
+    <h1 id="movieName">
+        Movie Name
+    </h1>
+
+
+
+    <p id="movieCategory">
+    </p>
+
+
+
+    <p id="movieYear">
+    </p>
+
+
+
+    <p id="movieDescription">
+    </p>
+
+
+
+
+    <button onclick="watchNow()">
+
+        ▶ Watch Now
+
+    </button>
+
+
+
+
+    <div id="playerBox" style="display:none;">
+
+
+        <h2>
+            🎬 Movie Player
+        </h2>
+
+
+
+        <video 
+        id="videoPlayer"
+        controls
+        width="100%"
+        >
+
+
+        </video>
+
+
+
+        <p>
+            Select Quality
+        </p>
+
+
+
+        <button onclick="changeQuality('480p')">
+            480p
+        </button>
+
+
+
+        <button onclick="changeQuality('720p')">
+            720p
+        </button>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<script src="auth-check.js"></script>
+
+<script type="module" src="movie-details.js"></script>
+
+
+</body>
+
+</html>

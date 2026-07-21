@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+
+    background:
+    radial-gradient(circle at center,
+    rgba(255,248,220,.95) 0%,
+    rgba(247,224,150,.85) 35%,
+    rgba(212,175,55,.65) 75%,
+    rgba(160,120,20,.55) 100%),
+
+    linear-gradient(135deg,#FFFDF6,#F7E7A8,#D4AF37);
+}
+
+/* Golden Light */
+
+body::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    top:-120px;
+    left:-120px;
+
+    background:radial-gradient(circle,
+    rgba(255,255,255,.9),
+    transparent 70%);
+
+    filter:blur(40px);
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    right:-150px;
+    bottom:-150px;
+
+    background:radial-gradient(circle,
+    rgba(255,215,0,.55),
+    transparent 70%);
+
+    filter:blur(50px);
+}
+
+/* OTP Card */
+
+.otp-box{
+
+    width:360px;
+    padding:35px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    border:2px solid rgba(212,175,55,.5);
+
+    border-radius:28px;
+
+    text-align:center;
+
+    position:relative;
+    z-index:10;
+
+    box-shadow:0 0 35px rgba(212,175,55,.35);
+
+}
+
+/* Heading */
+
+.otp-box h1{
+
+    color:#7A5200;
+
+    font-size:34px;
+
+    margin-bottom:12px;
+
+    font-weight:bold;
+
+}
+
+/* Text */
+
+.otp-box p{
+
+    color:#5D4037;
+
+    font-size:16px;
+
+    margin-bottom:25px;
+
+}
+
+/* OTP Boxes */
+
+.otp-input{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-bottom:28px;
+
+}
+
+.otp-input input{
+
+    width:48px;
+
+    height:55px;
+
+    background:rgba(255,255,255,.95);
+
+    border:2px solid #D4AF37;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:#333;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.otp-input input:focus{
+
+    transform:scale(1.08);
+
+    border-color:#B8860B;
+
+    box-shadow:0 0 18px rgba(212,175,55,.6);
+
+}
+
+/* Verify Button */
+
+#verifyBtn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#D4AF37,#B8860B);
+
+    box-shadow:0 8px 20px rgba(184,134,11,.45);
+
+    transition:.3s;
+
+}
+
+#verifyBtn:hover{
+
+    transform:translateY(-2px);
+
+    background:linear-gradient(135deg,#E6C55A,#C99700);
+
+}
+
+/* Mobile */
+
+@media(max-width:420px){
+
+.otp-box{
+    width:92%;
+}
+
+.otp-input input{
+
+    width:42px;
+    height:50px;
+
+}
+
+}

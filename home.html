@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FILMY OTT - Home</title>
+
+<link rel="stylesheet" href="home.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <h1>🎬 FILMY OTT</h1>
+
+
+    <input 
+    type="text" 
+    id="searchBox"
+    placeholder="🔍 Search Movies & Web Series..."
+    onkeyup="searchContent()">
+
+
+</header>
+
+
+
+
+<section class="banner">
+
+
+    <div class="banner-content">
+
+
+        <h2>
+        🔥 Trending Now
+        </h2>
+
+
+        <p>
+        Watch Unlimited Movies & Web Series
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 class="section-title">
+🔥 Trending Movies
+</h2>
+
+
+
+<div id="movieList" class="movies"></div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2 class="section-title">
+📺 Web Series
+</h2>
+
+
+
+<div id="seriesList" class="movies"></div>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2 class="section-title">
+🎬 Latest Releases
+</h2>
+
+
+
+<div id="latestMovies" class="movies"></div>
+
+
+</section>
+
+
+
+
+
+
+
+<nav class="bottom-nav">
+
+
+<button onclick="goHome()">
+🏠 Home
+</button>
+
+
+<button onclick="goMovies()">
+🎬 Movies
+</button>
+
+
+<button onclick="goSeries()">
+📺 Series
+</button>
+
+
+<button onclick="goProfile()">
+👤 Profile
+</button>
+
+
+</nav>
+
+
+
+
+
+<script src="auth-check.js"></script>
+
+<script type="module" src="home.js"></script>
+
+
+</body>
+
+</html>

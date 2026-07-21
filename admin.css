@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+
+    background:
+    radial-gradient(circle at center,
+    rgba(255,248,220,.95) 0%,
+    rgba(247,224,150,.85) 35%,
+    rgba(212,175,55,.65) 75%,
+    rgba(160,120,20,.55) 100%),
+    linear-gradient(135deg,#FFFDF6,#F7E7A8,#D4AF37);
+
+}
+
+
+/* Luxury Light Effect */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    top:-120px;
+
+    left:-120px;
+
+
+    background:
+    radial-gradient(circle,
+    rgba(255,255,255,.9),
+    transparent 70%);
+
+
+    filter:blur(40px);
+
+}
+
+
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    right:-150px;
+
+    bottom:-150px;
+
+
+    background:
+    radial-gradient(circle,
+    rgba(255,215,0,.55),
+    transparent 70%);
+
+
+    filter:blur(50px);
+
+}
+
+
+/* Admin Login Box */
+
+.admin-box{
+
+    width:380px;
+
+    padding:35px;
+
+
+    background:rgba(255,255,255,.18);
+
+
+    backdrop-filter:blur(18px);
+
+
+    border:2px solid rgba(212,175,55,.45);
+
+
+    border-radius:28px;
+
+
+    text-align:center;
+
+
+    position:relative;
+
+    z-index:10;
+
+
+    box-shadow:
+    0 0 35px rgba(212,175,55,.35);
+
+}
+
+
+
+.admin-box h1{
+
+    color:#7A5200;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.admin-box h2{
+
+    color:#8B6500;
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* Input */
+
+.admin-box input{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    margin:10px 0;
+
+
+    border-radius:14px;
+
+
+    border:2px solid #D4AF37;
+
+
+    background:rgba(255,255,255,.92);
+
+
+    color:#333;
+
+
+    font-size:16px;
+
+
+    outline:none;
+
+}
+
+
+
+.admin-box input:focus{
+
+
+    border-color:#B8860B;
+
+
+    box-shadow:
+    0 0 15px rgba(212,175,55,.45);
+
+}
+
+
+
+/* Button */
+
+.admin-box button{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    margin-top:18px;
+
+
+    border:none;
+
+
+    border-radius:14px;
+
+
+    font-size:18px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    color:white;
+
+
+    background:
+    linear-gradient(135deg,#D4AF37,#B8860B);
+
+
+    box-shadow:
+    0 8px 20px rgba(184,134,11,.45);
+
+
+}
+
+
+
+.admin-box button:hover{
+
+
+    transform:translateY(-2px);
+
+
+    background:
+    linear-gradient(135deg,#E6C55A,#C99700);
+
+}
+
+
+
+/* Message */
+
+#msg{
+
+    margin-top:18px;
+
+    font-weight:bold;
+
+    color:#8B0000;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:420px){
+
+
+.admin-box{
+
+    width:92%;
+
+    padding:25px;
+
+}
+
+
+}

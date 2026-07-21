@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FILMY OTT | Series Details</title>
+
+<link rel="stylesheet" href="movie-details.css">
+
+</head>
+
+
+<body>
+
+
+<div class="details-box">
+
+
+
+    <img 
+    id="seriesPoster"
+    class="details-poster"
+    src=""
+    >
+
+
+
+    <h1 id="seriesName">
+        Web Series Name
+    </h1>
+
+
+
+    <p id="seriesCategory"></p>
+
+
+
+    <p id="seriesYear"></p>
+
+
+
+    <p id="seriesDescription"></p>
+
+
+
+
+    <button onclick="watchSeries()">
+
+        ▶ Watch Now
+
+    </button>
+
+
+
+
+    <div id="playerBox" style="display:none;">
+
+
+        <h2>
+            📺 Series Player
+        </h2>
+
+
+
+        <video 
+        id="videoPlayer"
+        controls
+        width="100%">
+        </video>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<script src="auth-check.js"></script>
+
+<script type="module" src="series-details.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>FILMY OTT</title>
+
+<meta name="theme-color" content="#D4AF37">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="icon" href="logo.png">
+
+<link rel="apple-touch-icon" href="logo.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="bg-light"></div>
+
+<div class="splash">
+
+    <img src="logo.png" class="logo">
+
+    <h1>FILMY OTT</h1>
+
+    <p>Unlimited Entertainment</p>
+
+    <h3>Powered by LRGujjar26</h3>
+
+</div>
+
+<script>
+
+if("serviceWorker" in navigator){
+
+    window.addEventListener("load",function(){
+
+        navigator.serviceWorker.register("service-worker.js");
+
+    });
+
+}
+
+setTimeout(function(){
+
+    window.location.href="login.html";
+
+},5000);
+
+</script>
+
+</body>
+
+</html>
